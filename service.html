@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Tab Geo-Map Solution</title>
+    <link href="img/logo/favicon.png" rel="shortcut icon" type="image/png" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome icon -->
+    <script
+      src="https://kit.fontawesome.com/07706d4a86.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive sheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <div id="perLoader"></div>
+
+    <a href="#top" class="top-btn-container"
+      ><i class="fas fa-arrow-up top-up-icon"></i
+    ></a>
+
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <span><i class="fas fa-phone-alt"></i> +91 9625300318</span>
+              <span
+                ><i class="fas fa-paper-plane"></i>
+                info@tabgeo-mapsolution.co.in</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo/logo.png" class="logo" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <a href="#">
+              <div class="container-nav" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </a>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sector.html">Sectors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-4">Services</h2>
+            <span
+              ><a href="index.html">Home</a> /
+              <a href="services.html">Services</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-details section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Service</h2>
+            <p>
+              Tab Geo-Map Solution is providing Geo spatial & Engineering
+              Consultancy services, <br />
+              we are all india service providing Company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-satellite section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <h3>Satellite Photogrammetry</h3>
+            <p>
+              As the space technology is moving fast in delivering the high
+              resolution of the satellite images, we are also moving forward to
+              use the same for the various applications.Tab Geo-Map is expertise
+              in using high resolution stereo satellite imagery by our latest
+              and high end software for creating various products for different
+              industry sectors. We are capable in handling Cartosat-1 (2.5M),
+              IKONOS (1.0M), Geoeye-1(0.5M), Worldview-1 and 2 and Worldview-3
+              (0.3M) etc. We develope high quality DTM/Mapping and Orthos using
+              high resolution satellite images which is extremely cost effective
+              method for developing 3D topographical datbase for large area
+              study.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Satellite Data imagery
+                Provider.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 2D 3D Topographical
+                Map.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Digital terrain model
+                (DTM).
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Ortho Photo.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> GIS Analysis Services.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Modeling and
+                Simulations.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/satellite.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-at section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/aerial-triangulation.jpg"
+              class="md-mb-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <h3>Aerial Photogrammetry</h3>
+            <p>
+              Aerial photographs are taken from aerial camera mounted on drones,
+              airplane or helicopter. The cameras which we use for
+              photogrammetric applications are called Metric camera. These
+              cameras provide pictures of the terrain which are used for making
+              precise measurements and other information which help in
+              determining the relative location of the points. It also help in
+              calculating angles, volumes, elevations, size and shape of the
+              object.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Drone imagery
+                Provider.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 2D 3D Topographical
+                Map.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> 3D Modeling.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Digital terrain model
+                (DTM).
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Digital surface model
+                (DSM).
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Ortho Photo.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> GIS Analysis Services.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> UAV Drone Survey and
+                Mapping.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-lidar section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <h3>Lidar Survey</h3>
+            <p>
+              (LIDAR) or Light Detection and Ranging technology involves a
+              scanning and ranging laser system that produces pinpoint accurate,
+              high-resolution topographic maps. Today, the entire process of
+              airborne laser mapping is highly automated, from flight planning,
+              to data acquisition and the generation of digital terrain models.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Large area for Crop
+                Estimation.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Underground Mine 3D
+                Modeling.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Produce Point Cloud
+                DEM,DTM, and CAD file.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Large Dump Cut/Fill
+                Quantity Estimation.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> GIS Analysis Services.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Cyclone Mitigation
+                Plan.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Plant Materiel
+                Estimation.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Mines Ore/Waste
+                Estimation.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/lidar.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-topography section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/topography.jpg"
+              class="md-mb-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <h3>Topography Survey</h3>
+            <p>
+              Topographic Surveying. Topographic Surveying. determining the
+              relative locations of points (places) on the earth's surface by
+              measuring horizontal distances, differences in elevation and
+              directions. topos (Gr. ): place; topographic maps give the
+              locations of places (observable features); they serve as base
+              maps.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Neighbouring
+                buildings.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Human-made features
+                such as boundaries.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Walkways.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Detailed and accurate
+                picture.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> GIS Analysis Services.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Planning your
+                topographical surveys.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-asset section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <h3>Asset Mapping</h3>
+            <p>
+              Asset management is not just about knowing where your assets are
+              it’s also about tracking their performance. But if your assets are
+              spread over a large area, it can be expensive to employ enough
+              staff to cover all the locations and assets. Moreover, organizing
+              and arranging all the assets can be difficult if done using manual
+              methods This is where the geographic information system (GIS)
+              helps. The GIS technology provides you with information on the
+              whereabouts of your assets and allows you to record other
+              attributes such as air pressure and temperature. This gives you
+              much better visibility into your assets, warehouses, and
+              workshops.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 3D visualization.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> GPS tracking.</li>
+              <li><i class="fas fa-angle-double-right"></i> GIS solution.</li>
+              <li><i class="fas fa-angle-double-right"></i> Custom maps.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Track maintenance
+                tasks.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/asset.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-2D3D section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/2d-3d.jpg"
+              class="md-mb-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <h3>2D & 3D Mapping</h3>
+            <p>
+              3D Planimetric/Topographic mapping mainly represents the earth
+              surface features in 3D manner using Line, Point/Symbol and
+              Polygon/region data. With this 3D Vector data user can make
+              different analysis and decisions based on their specific need and
+              applications. Tab Geo-Map uses industry-high end software like
+              Socetset, VR Systems, INPHO coupled with technical expertise to
+              provide high-quality production of 3D vector data.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> National mapping
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Mine Mapping and
+                Management.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Civil Survey Planning
+                & Design.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Plant/Facility
+                Planning & Management.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Roadway Design.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Storm Water
+                Management.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Utility Management.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-altitude section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <h3>Low Altitude Drone Photogrammetry</h3>
+            <p>
+              To conduct low-altitude UAV oblique photogrammetry, flight
+              preparation, route planning and camera calibration should be
+              carried out in advance. A multi-rotor UAV is employed to capture
+              the ortho and oblique images during the flight. When images are
+              acquired, rectification is conducted using optimized internal
+              camera parameters. An image matching procedure is carried out to
+              provide adequate 2D key points for aerial triangulation
+              photogrammetry processing. Then, point cloud densification is
+              conducted for mesh generation, and texture rendering is employed
+              to finally achieve the comprehensive 3D model.
+            </p>
+            <p>
+              Capturing image data with UAV tools requires some initial
+              preparation, calibration of the tool and also ensures the Global
+              Positioning System works perfectly, because all the photos to be
+              used in the next process must have the Latitude, Longitude and
+              Altitude attributes. After that, use the help of Point of Interest
+              application where the UAV will rotate with a point that has been
+              determined as its center, which will assist in collecting the
+              image of the object. Shooting is required to be solid enough so
+              that it can be detected in common in the photogrammetry process.
+            </p>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/low_altitude.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-videography section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/video.jpg"
+              class="md-mb-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <h3>Aerial Videography</h3>
+            <p>
+              GeoSpatial Video is the combination of High Resolution Video with
+              Geo Metadata (GPS & IMU) which turns a normal video into a
+              decision making tool.
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Geo-referenced (GPS)
+                Video.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Live Video Feed
+                Monitoring.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> View with Satellite
+                Images, Google Maps.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Snap Photos from Video
+                at Points of Interest.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Mark Points of
+                Interest with Waypoints Marker.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Associate annotations
+                with Waypoints.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-remote section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <h3>Remote Sensing</h3>
+            <p>
+              Remote sensing Data is captured by Camera mounted in the
+              satellite. These produced high resolution images along with GIS
+              tool can be used for various application in different sectors.We
+              avails the product and consultancy services in the field of Remote
+              Sensing and GIS.
+            </p>
+            <p>
+              Radars and lasers are breathtaking attributes of sci-fi movies no
+              longer as it was just a few decades ago. These innovations have
+              been widely used as types of sensors in remote sensing since
+              science made a giant step ahead
+            </p>
+            <ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Agriculture and Soil
+                Protection.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Cartography.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Rural & Urban
+                development Planning.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Active Remote Sensing.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Laser altimeter.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/remot.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-page-videography section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img
+              src="img/services/service_page/brige.jpg"
+              class="md-mb-5"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 col-md-12">
+            <h3>Bridge Inspection</h3>
+            <p>
+              AIMS OF BRIDGE INSPECTION. To assess structural soundness and
+              fitness for use. To identify trouble at the earliest stage. To
+              keep a systematic record of condition and behaviour (data bank) To
+              plan repair and rehabilitation strategy and programme.
+            </p>
+            <ul>
+              <li><i class="fas fa-angle-double-right"></i> lidar sensor.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Drone imagery
+                Provider.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 2D 3D Topographical
+                Map.
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> 3D Modeling.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Digital terrain model
+                (DTM).
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Digital surface model
+                (DSM).
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Ortho Photo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-p">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <img src="img/logo/logo2.png" class="logo" alt="logo" />
+            <p>
+              We tab Geo-map solution Pvt. Ltd. is a Geospatial & Engineering
+              Consultancy Company that is based in Delhi India.
+            </p>
+            <ul class="footer-list">
+              <li>
+                <i class="fas fa-angle-double-right"></i> Aerial Photogrammetry
+              </li>
+              <li><i class="fas fa-angle-double-right"></i> Drone Survey</li>
+              <li><i class="fas fa-angle-double-right"></i> Lidar Survey</li>
+              <li><i class="fas fa-angle-double-right"></i> GIS</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 footer-links">
+            <h3 class="heading">Useful Links</h3>
+            <ul class="mt-4">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="sector.html">Sectors</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 contact-details">
+            <h3 class="heading mb-4">Contact Details</h3>
+            <p>
+              <i class="fas fa-thumbtack"></i> A-35 Shiv Vihar Vikas Nagar Uttam
+              Nagar Delhi.
+            </p>
+            <p><i class="fas fa-phone-alt"></i> +91 9625300318</p>
+            <p><i class="far fa-envelope"></i> info@tabgeo-mapsolution.co.in</p>
+
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 border-1-top mt-3 text-center">
+            <p>
+              Copyright ©2022 Tab Geo-Map Solution pvt. Ltd. | All Rights
+              Reserved | by CareWeb Book Website whatsapp 8076520597.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

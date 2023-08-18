@@ -1,0 +1,244 @@
+@media only screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 999px) {
+  /* grid */
+  .grid-two-col {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 50px;
+  }
+
+  .grid-three-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+  .grid-four-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo img {
+    width: 85%;
+    padding: 10px 0;
+  }
+  .wrapper .btn {
+    display: block;
+  }
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    background: #253147;
+    display: block;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    line-height: 50px;
+    padding: 50px 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+  }
+  #menu-btn:checked ~ .nav-links {
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn {
+    display: none;
+  }
+  .nav-links::-webkit-scrollbar {
+    width: 0px;
+  }
+  .nav-links li {
+    margin: 15px 10px;
+  }
+  .nav-links li a {
+    color: #fff;
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-down {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    top: 80px;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  #show-down:checked ~ .drop-down,
+  #show-mega:checked ~ .mega-box {
+    max-height: 100%;
+  }
+  .nav-links .drop-down li a {
+    font-size: 17px;
+  }
+  .nav-links .desktop-item {
+    display: none;
+  }
+  .nav-links .mobile-item {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  .nav-links .mobile-item:hover {
+    background-color: #253147;
+  }
+  .mega-box {
+    position: static;
+    top: 80px;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 30px;
+    transition: all 0.5s ease;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .mega-box .content {
+    background: #253147;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .mega-box .content .row {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .content .row .mega-links {
+    padding-left: 15px;
+  }
+  .content .row .mega-links li {
+    margin: 0px;
+  }
+}
+
+/* @media only screen and (max-width: 999px) {
+  .grid-col-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-col-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .about img {
+    margin-top: 50px;
+  }
+
+  .carousel-item h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  footer .contact-details,
+  .footer-links {
+    margin-top: 50px;
+  }
+
+  .contact-info .col-lg-4.border-1-right {
+    border-right: none;
+  }
+
+  #perLoader {
+    background-size: 70%;
+  }
+
+  .md-mb-5 {
+    margin-bottom: 15px;
+  }
+} */
+
+@media only screen and (max-width: 767px) {
+  .grid-col-five {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
+  }
+
+  .grid-col-four {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0px;
+  }
+
+  .header-top .col-12 {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .header-top .col-12 span:nth-child(2) {
+    margin-top: 8px;
+  }
+
+  .carousel-item h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  #perLoader {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .grid-col-five {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .heading span,
+  .center-heading span {
+    font-size: 40px;
+    color: var(--heading);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+
+  .carousel-item h2 {
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
